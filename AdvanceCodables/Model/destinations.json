@@ -1,0 +1,62 @@
+[
+    {
+        "Subject": "1",
+        "Body": {
+            "ContentType": "HTML",
+            "Content": "1"
+        },
+        "Start": {
+            "DateTime": "2001-12-19T16:39:57-08:00",
+            "TimeZone": "Europe/Barcelona"
+        },
+        "End": {
+            "DateTime": "2002-10-19T16:39:57-08:00",
+            "TimeZone": "Europe/Paris"
+        }
+    },
+    {
+        "Subject": "2",
+        "Body": {
+            "ContentType": "HTML",
+            "Content": "Part 2 start"
+        },
+        "Start": {
+            "DateTime": "1998-12-19T16:39:57-08:00",
+            "TimeZone": "Europe/Paris"
+        },
+        "End": {
+            "DateTime": "1999-11-19T16:39:57-08:00",
+            "TimeZone": "Europe/Dublin"
+        }
+    },
+    {
+        "Subject": "3",
+        "Body": {
+            "ContentType": "HTML",
+            "Content": "Part 3 Start"
+        },
+        "Start": {
+            "DateTime": "1996-12-19T16:39:57-08:00",
+            "TimeZone": "Europe/Paris"
+        },
+        "End": {
+            "DateTime": "1997-12-19T16:39:57-08:00",
+            "TimeZone": "Europe/Berlin"
+        }
+    },
+    {
+        "Subject": "4",
+        "Body": {
+            "ContentType": "HTML",
+            "Content": "Part 4 start"
+        },
+        "Start": {
+            "DateTime": "1990-12-19T16:39:57-08:00",
+            "TimeZone": "Europe/Denmark"
+        },
+        "End": {
+            "DateTime": "1992-12-19T16:39:57-08:00",
+            "TimeZone": "Europe/Germany"
+        }
+    }
+]

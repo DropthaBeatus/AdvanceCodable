@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Advance Codable View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AdvanceCodableViewController" customModule="AdvanceCodables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvG-NE-T93">
+                                <rect key="frame" x="16" y="494" width="343" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.54849775310000004" blue="0.01355700239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Opt-Eu-9K1"/>
+                                </constraints>
+                                <state key="normal" title="Load Donut.json"/>
+                                <connections>
+                                    <action selector="loadDonutJsonBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KOg-5h-Aob"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEO-Jy-WT2">
+                                <rect key="frame" x="16" y="550" width="343" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.54849775310000004" blue="0.01355700239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="jrd-5m-iMj"/>
+                                </constraints>
+                                <state key="normal" title="Load Royalty.json"/>
+                                <connections>
+                                    <action selector="loadRoyaltyJsonBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZK-wu-aqO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFr-1X-4qN">
+                                <rect key="frame" x="16" y="606" width="343" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.54849775310000004" blue="0.01355700239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="t5W-Uf-pwT"/>
+                                </constraints>
+                                <state key="normal" title="Load Destination.json"/>
+                                <connections>
+                                    <action selector="loadDestinationJsonBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="804-dV-h3J"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="JSON will be loaded in here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0p9-8U-5fS">
+                                <rect key="frame" x="16" y="49" width="343" height="437"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="437" id="Rda-Xk-rog"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KvG-NE-T93" secondAttribute="trailing" constant="16" id="2wb-qt-Zoe"/>
+                            <constraint firstItem="aFr-1X-4qN" firstAttribute="top" secondItem="hEO-Jy-WT2" secondAttribute="bottom" constant="8" id="882-4g-ll2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aFr-1X-4qN" secondAttribute="trailing" constant="16" id="8IL-WJ-aQx"/>
+                            <constraint firstItem="KvG-NE-T93" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="474" id="BD7-mC-BOD"/>
+                            <constraint firstItem="hEO-Jy-WT2" firstAttribute="top" secondItem="KvG-NE-T93" secondAttribute="bottom" constant="8" id="GVp-Lu-MaR"/>
+                            <constraint firstItem="aFr-1X-4qN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="I9J-u9-j01"/>
+                            <constraint firstItem="0p9-8U-5fS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="RL7-bg-6dz"/>
+                            <constraint firstItem="hEO-Jy-WT2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UVq-0N-iul"/>
+                            <constraint firstItem="0p9-8U-5fS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Usu-92-NRc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hEO-Jy-WT2" secondAttribute="trailing" constant="16" id="V8f-JJ-0Xo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0p9-8U-5fS" secondAttribute="trailing" constant="16" id="fY7-an-fpO"/>
+                            <constraint firstItem="KvG-NE-T93" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lft-u1-9Tf"/>
+                            <constraint firstItem="KvG-NE-T93" firstAttribute="top" secondItem="0p9-8U-5fS" secondAttribute="bottom" constant="8" id="uya-Nb-24e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textDisplay" destination="0p9-8U-5fS" id="7tY-v9-f8y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

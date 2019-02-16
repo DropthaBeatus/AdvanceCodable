@@ -1,0 +1,40 @@
+[
+    {
+        "id": "0001",
+        "type": "donut",
+        "name": "Cake",
+        "ppu": 0.55,
+        "batter":
+            [
+                { "id": "1001", "type": "Regular" },
+                { "id": "1002", "type": "Chocolate" },
+                { "id": "1003", "type": "Blueberry" },
+                { "id": "1004", "type": "Devil's Food" }
+            ]
+
+    },
+    {
+        "id": "0002",
+        "type": "donut",
+        "name": "Raised",
+        "ppu": 0.55,
+        "BestSelling": "Yes",
+        "batter":
+            [
+                { "id": "1001", "type": "Regular" }
+            ]
+            
+    },
+    {
+        "id": "0003",
+        "type": "donut",
+        "name": "Old Fashioned",
+        "ppu": 0.55,
+        "batter":
+            [
+                { "id": "1001", "type": "Regular" },
+                { "id": "1002", "type": "Chocolate" }
+            ]
+    }
+]
+
